@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    
+}
+@font-face {
+    font-family: 'Young Sherif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    /* height: 100vh; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50vh;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 17px;
+    gap: 15px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+
+width: fit-content;
+margin-top: -10px;
+gap: 15px;
+}
+header img{
+border-radius: 10px;
+width: 432px;
+}
+.title{
+    font-family: 'Young Sherif';
+    font-weight: 400;
+}
+.headertxt{
+    font-family: 'Outfit';
+    color:hsl(30, 10%, 34%) ;
+    font-size:11px ;
+    font-weight: 400;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.content{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.prep{
+    width: 100%;
+    background-color: hsl(330, 100%, 98%);
+    padding: 15px;
+}
+.preptitle{
+    color:hsl(332, 51%, 32%) ;
+    font-family: 'Outfit';
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.preplist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Outfit';
+}
+.preplist ul li {
+    list-style: none;
+    
+  }
+ .preplist ul li::before {
+    padding-left: 10px;
+    padding-right: 10px;
+    content: "\2022"; 
+    color: hsl(332, 51%, 32%); 
+    display: inline-block;
+    width: 1em; 
+   
+  }
+.preplist span{
+    padding-right: 10px;
+    /* padding-left: 10px */
+    color:  hsl(24, 5%, 18%);
+    font-family: 'Outfit';
+    font-weight: 600;
+}
+.ingredients_title{
+    color:hsl(14, 45%, 36%) ;
+    font-family: 'Young Sherif';
+    padding: 10px 10px 10px 0;
+}
+.ingredients_lists{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-family: 'Outfit';
+    color: hsl(24, 5%, 18%);;
+    padding-left: 10px;
+}
+.ingredients_lists li {
+    list-style: none;
+    
+    /* padding: 5px; */
+    
+  }
+ .ingredients_lists li::before {
+    padding-left: 10px;
+    padding-right: 10px;
+    content: "\2022"; 
+    color: hsl(14, 45%, 36%) ; 
+    display: inline-block;
+    width: 1em; 
+
+  }
+  .institle{
+    font-family: 'Young Sherif';
+    color: hsl(14, 45%, 36%) ;
+    padding: 10px;
+  }
+  .instruction-list{
+    padding-left: 10px;
+  }
+  ol {
+    list-style-type: none; 
+    padding: 0;
+    counter-reset: list-counter; 
+  }
+
+ 
+ ol li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; 
+    text-indent: -1.3em;
+    font-family: 'Outfit';
+    color: hsla(0, 13%, 19%, 0.902);
+    
+  }
+
+ 
+  ol li::before {
+    font-family: 'Outfit';
+    font-weight: 600;
+    content: counter(list-counter) ;
+    counter-increment: list-counter;
+    color: hsl(14, 45%, 36%) ;
+    margin-right: 5px;
+  }
+.instruction-text{
+    font-family: 'Outfit';
+    color: hsla(0, 13%, 19%, 0.902);
+    /* font-size: 16px; */
+    font-weight: 900;
+}
+.nutitle{
+    font-family: 'Young Sherif';
+    color: hsl(14, 45%, 36%) ;
+    padding: 10px;
+}
+.nutxt{
+font-family: 'Outfit';
+color: hsla(0, 13%, 19%, 0.902);
+}
+.nutlist{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.nutlist > div{
+    display: flex;
+    justify-content: space-around;
+    
+    
+    /* align-items: center; */
+    /* text-align: center; */
+}
+.nutlist p{
+    font-family: 'Outfit';
+}
+.cal{
+    font-family: 'Outfit';
+    color:  hsl(14, 45%, 36%) ;
+    font-weight: 600;
+}
